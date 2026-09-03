@@ -43,14 +43,11 @@ a, button { touch-action: manipulation; }
 .section-heading span { color: var(--muted); font-size: .7rem; letter-spacing: .15em; }
 .project { margin-bottom: clamp(120px, 16vw, 230px); }
 .project-visual { position: relative; display: block; overflow: hidden; min-height: 320px; background: #222; }
-.project-visual img { width: 100%; height: auto; transition: transform 500ms cubic-bezier(.2,.7,.2,1), filter 300ms ease; }
-.project-visual:hover img { transform: scale(1.018); filter: saturate(1.08); }
-.visual-index, .visual-action { position: absolute; z-index: 2; top: 24px; padding: 9px 12px; background: var(--paper); font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.project-visual img { width: 100%; height: auto; transition: transform 300ms cubic-bezier(.2,.7,.2,1), filter 300ms ease; }
+.project-visual:hover img { transform: scale(1.012); filter: saturate(1.06); }
+.visual-index { position: absolute; z-index: 2; top: 24px; padding: 9px 12px; background: var(--paper); font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .visual-index { left: 24px; }
-.project-visual--dungeon .visual-index, .project-visual--yizhe .visual-index,
-.project-visual--dungeon .visual-action, .project-visual--yizhe .visual-action { display: none; }
-.visual-action { right: 24px; opacity: 0; transform: translateY(8px); transition: opacity 220ms ease, transform 220ms ease; }
-.project-visual:hover .visual-action, .project-visual:focus-visible .visual-action { opacity: 1; transform: none; }
+.project-visual--dungeon .visual-index, .project-visual--yizhe .visual-index { display: none; }
 .project-copy { display: grid; grid-template-columns: 1.35fr .65fr; gap: 48px; padding-top: 28px; border-top: 1px solid var(--ink); }
 .project-copy h3 { margin: 10px 0 0; font-family: var(--display); font-size: clamp(3rem, 6vw, 7rem); letter-spacing: -.055em; line-height: .86; }
 .project-copy h3 span { color: var(--muted); font-size: .44em; font-weight: 500; letter-spacing: -.025em; }
@@ -198,7 +195,6 @@ a, button { touch-action: manipulation; }
   .project { margin-bottom: 112px; }
   .project-visual { min-height: 0; }
   .visual-index { top: 12px; left: 12px; }
-  .visual-action { top: auto; right: 12px; bottom: 12px; opacity: 1; transform: none; }
   .project-copy { gap: 28px; }
   .project-copy h3 { font-size: 3.5rem; }
   .tool-label { padding-inline: 16px; }
