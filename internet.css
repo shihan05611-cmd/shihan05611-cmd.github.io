@@ -1,0 +1,5 @@
+/* Non-game portfolio: Controller leads; the remaining design matches the game edition. */
+.controller-showcase { background: #22292a; border: 2px solid var(--ink); box-shadow: 4px 4px 0 #dfd8ca; padding: 18px 18px 0; }
+.controller-showcase img { width: 100%; max-height: 520px; object-fit: contain; }
+[data-theme="comic"] #controller .project-story h3 { font-size: clamp(23px,2.5vw,30px); font-weight: 650; line-height: 1.5; margin: 0 0 18px; }
+@media(max-width:700px) { .controller-showcase { padding: 8px 8px 0; } }

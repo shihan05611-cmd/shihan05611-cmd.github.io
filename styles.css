@@ -74,6 +74,7 @@ a, button { touch-action: manipulation; }
 .tool-visual img { width: 100%; height: auto; object-fit: contain; border: 1px solid #414a42; }
 .tool-links { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 48px; font-size: .68rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
 .tool-links a { min-height: 44px; display: inline-flex; align-items: center; color: var(--lime); }
+.project-analysis { margin-top: clamp(120px, 16vw, 230px); margin-bottom: 0; }
 
 .site-footer { min-height: 120px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-top: 1px solid var(--ink); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .site-footer p { margin: 0; }

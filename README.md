@@ -1,23 +1,10 @@
-# SHI HAN Portfolio
+# SHI HAN — 非游戏版作品集
 
-一个不依赖框架的静态多页作品集。首版重点是信息层级和作品展示，后续可直接替换真实素材与链接。
+与游戏版保持同一套简约漫画视觉、项目亮点文案及猫咪交互。差异为：Controller 置顶，其后是元素回廊、弈者，不展示数值拆解案。
 
-## 本地预览
+在 portfolio 目录执行 `python -m http.server 4173`，访问 `http://127.0.0.1:4173/internet-version/`。
 
-在 `portfolio` 目录运行任一静态服务器，例如：
-
-```powershell
-python -m http.server 4173
-```
-
-访问 `http://localhost:4173/`。
-
-## 发布前需要替换
-
-1. 元素回廊和弈者已使用正式展示截图；后续可以直接用同名文件替换为更新版本，或补充 GIF。
-2. 两个游戏的 Live Demo 已填写。继续全局搜索 `LINK TO ADD`、`URL TO ADD`、`TO UPDATE` 和 `controller-package`，补全 GitHub、文档、Controller、邮箱与包名。
-3. 根据最终事实校对项目文案，尤其是工具命令与公开能力。
-
-## GitHub Pages
-
-最简单的方式是把 `portfolio/` 作为站点发布目录。若仓库还包含其他工程，可使用 GitHub Actions 上传该目录；确认仓库名和目标 URL 后再添加工作流，避免路径前缀配置错误。
+- 首页与素材独立保存在本目录，可单独部署。
+- home.css、sketch.css、comic.css、home.js 与游戏版同步；internet.css 仅用于置顶 Controller 的展示。
+- 弈者使用最新卡牌战斗截图与 yizhe-card-game 链接，猫咪使用真实原始／火／水待机动画。
+- 仅完成本地修改，未发布线上。
