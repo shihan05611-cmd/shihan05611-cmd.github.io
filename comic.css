@@ -273,7 +273,7 @@ html[data-theme="comic"] {
   background: #fffdf7;
   border: 1.5px solid #ae382d;
   border-radius: 2px 4px 2px 3px;
-  transform: rotate(-1.5deg);
+  transform: none;
   transition: background .18s ease;
 }
 [data-theme="comic"] .design-note summary:hover .note-toggle,
@@ -301,3 +301,10 @@ html[data-theme="comic"] {
 @media (prefers-reduced-motion: reduce) {
   [data-theme="comic"] .design-note .note-toggle::before { transition: none; }
 }
+
+/* Three independent design principles share the retrospective disclosure. */
+.principle-list { min-width: 0; }
+[data-theme="comic"] .principle-note + .principle-note { border-top: 0; }
+[data-theme="comic"] .principle-note summary { padding: 23px 0; }
+[data-theme="comic"] .principle-note summary > .principle-title { font-size: clamp(20px, 2.2vw, 28px); font-weight: 700; line-height: 1.5; }
+.design-principles .pending-copy { color: var(--muted); }
